@@ -7,7 +7,8 @@ namespace SquareClass
     {
         public static string ToPoint(this List<double> list)
         {
-            StringBuilder sb = new StringBuilder('(');
+            StringBuilder sb = new StringBuilder();
+            sb.Append('(');
             for (int i = 0; i < list.Count; i++)
             {
                 sb.Append(list[i]);

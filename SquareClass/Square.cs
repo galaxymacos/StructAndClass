@@ -6,11 +6,15 @@ namespace SquareClass
 {
     public class Square
     {
+        public enum Position
+        {
+            Right,Left,Bottom,Up
+        }
         public double Size { get; set; }
         public double X { get; set; }
         public double Y { get; set; }
-        public double Area => Size * Size;
-        public double Parimeter => 4 * Size;
+        public virtual double Area => Size * Size;
+        public virtual double Parimeter => 4 * Size;
         public List<double> TopLeft => new List<double>{X,Y};
         public List<double> TopRight => new List<double>{X+Size,Y};
         public List<double> BottomLeft => new List<double>{X,Y-Size};
@@ -39,6 +43,32 @@ namespace SquareClass
                     sb.AppendLine();
             }
             return sb.ToString();
-        }    
+        }
+
+        public Square Move(double unit, Position position)
+        {
+            ChangePosition(unit, position);
+
+            return this;
+        }
+
+        public virtual void ChangePosition(double unit, Position position)
+        {
+            switch (position)
+            {
+                case Position.Bottom:
+                    Y -= unit;
+                    break;
+                case Position.Up:
+                    Y += unit;
+                    break;
+                case Position.Left:
+                    X -= unit;
+                    break;
+                case Position.Right:
+                    X += unit;
+                    break;
+            }
+        }
     }
 }
