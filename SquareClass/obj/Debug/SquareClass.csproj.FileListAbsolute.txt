@@ -1,0 +1,6 @@
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\bin\Debug\SquareClass.exe
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\bin\Debug\SquareClass.pdb
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\obj\Debug\SquareClass.csprojAssemblyReference.cache
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\obj\Debug\SquareClass.csproj.CoreCompileInputs.cache
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\obj\Debug\SquareClass.exe
+C:\Users\Paul\RiderProjects\StructAndClass\SquareClass\obj\Debug\SquareClass.pdb
